@@ -87,5 +87,5 @@
 ## 💁‍♂️ 프로젝트 팀원(수정필요)
 |Backend|Backend|Backend|
 |:---:|:---:|:---:|
-| ![](https://github.com/holychann.png?size=120) | ![](https://github.com/SeongHo-C.png?size=120) | ![](https://github.com/holychann.png?size=120)|
-|[조성찬](https://github.com/holychann)|[최희선](https://github.com/todaysunny612)|[이동호](https://github.com/holychann)
+| ![](https://github.com/holychann.png?size=120) | ![](https://github.com/todaysunny612.png?size=120) | ![](https://github.com/higakaga.png?size=120)|
+|[조성찬](https://github.com/holychann)|[최희선](https://github.com/todaysunny612)|[이동호](https://github.com/higakaga)

@@ -3,14 +3,14 @@
 <!-- logo -->
 <img src="https://user-images.githubusercontent.com/80824750/208554611-f8277015-12e8-48d2-b2cc-d09d67f03c02.png" width="400"/>
 
-### Project: Mythopia
+### Project: 슬기로운 소비생활
 
 <br/> [<img src="https://img.shields.io/badge/프로젝트 기간-2025.07.25~2025.08.24-green?style=flat&logo=&logoColor=white" />]()
 
 </div> 
 
 ## 📝 소개
-이 앱은 전국 각 지역의 전설과 괴담을 수집·크롤링하고, AI를 통해 이야기를 재창조하여 사용자에게 제공합니다. 각 이야기의 주요 특징과 태그를 AI가 추출해 손쉽게 검색하고 공유할 수 있는 플랫폼입니다.
+이 앱은 무조건 아끼는 절약이 아니라, '낭비를 줄이고 가치 있는, 실용성 있는 '현명한 선택'을 할 수 있게 도와주고자 합니다.
 
 - 프로젝트 소개
 - 프로젝트 화면 구성 또는 프로토 타입
@@ -24,6 +24,42 @@
 <br />
 
 > 화면 구성과 프로토 타입 중 원하는 것을 사용해주세요.
+
+### ⚙️실행 방법
+**STEP 1**  
+`Fork -> Clone -> IntelliJ IDEA -> build.gradle -> run`  
+
+**STEP 2**  
+`/src/main/resources/`에 application.yml 파일을 생성(resources 디렉토리 부재 시 직접 생성)  
+
+**STEP 3**  
+`application.yml`에 다음 내용 추가
+
+```properties
+spring:
+  application:
+    name: wise-spending-life
+
+  datasource:
+    url: [Supabase url] (아래 설명)
+
+  jpa:
+    hibernate:
+      ddl-auto: create  # 앱 시작 시 테이블 모두 초기화
+
+```  
+**URL**  
+Supabase 에서 Organization(조직) 을 하나 만들고 그 안에서 Project 를 생성합니다.  
+다른 설정은 하지 않고 `region` 을 `한국`, `비밀번호` 와 `프로젝트 이름` 을 설정해줍니다. 여기서 프로젝트 이름이 DB 라고 생각하시면 됩니다.  
+만든 `프로젝트`로 들어와서 위에 `🔌Connect` 를 누릅니다.  
+`Type` 을 `JDBC` 로 변경 후, 세 가지 연결 방법 중 두 번째 연결 방법에 있는 url 을 복사합니다. (`jdbc:postgresql://aws어쩌고저쩌고`)  
+해당 `url` 을 yml `url` 에 붙여넣고 맨 뒤에 `[password]` 자리에 프로젝트 설정 시 작성한 `비밀번호` 를 넣어줍니다.  
+  
+설정 끝!
+
+<br />
+
+
 
 ### 화면 구성(수정필요)
 |Screen #1|Screen #2|
@@ -74,12 +110,12 @@
 
 ## 🤔 기술적 이슈와 해결 과정(수정필요)
 - Stream 써야할까?
-    - [Stream API에 대하여](https://velog.io/@yewo2nn16/Java-Stream-API)
+  - [Stream API에 대하여](https://velog.io/@yewo2nn16/Java-Stream-API)
 - Gmail STMP 이용하여 이메일 전송하기
-    - [gmail 보내기](https://velog.io/@yewo2nn16/Email-이메일-전송하기with-첨부파일)
+  - [gmail 보내기](https://velog.io/@yewo2nn16/Email-이메일-전송하기with-첨부파일)
 - AWS EC2에 배포하기
-    - [서버 배포하기-1](https://velog.io/@yewo2nn16/SpringBoot-서버-배포)
-    - [서버 배포하기-2](https://velog.io/@yewo2nn16/SpringBoot-서버-배포-인텔리제이에서-jar-파일-빌드해서-배포하기)
+  - [서버 배포하기-1](https://velog.io/@yewo2nn16/SpringBoot-서버-배포)
+  - [서버 배포하기-2](https://velog.io/@yewo2nn16/SpringBoot-서버-배포-인텔리제이에서-jar-파일-빌드해서-배포하기)
 
 
 <br />

@@ -70,4 +70,4 @@ jobs:
       uses: gradle/actions/dependency-submission@v4
       with:
         gradle-version: '8.14.3'
-        arguments: ':wise-spending-life:dependencySubmission'
+        build-root-directory: 'wise-spending-life'

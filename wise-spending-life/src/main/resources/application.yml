@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: wise-spending-life
+
+  datasource:
+    url: ${DB_URL}
+
+  jpa:
+    hibernate:
+      ddl-auto: create
